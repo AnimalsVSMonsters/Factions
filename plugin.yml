@@ -1,0 +1,22 @@
+name: AVMFactions
+version: 2.0.0
+description: AVM Factions plugin
+author: HuliPvP, MikeTheDev
+main: com.animalsvsmonsters.factions.Main
+prefix: AVM
+depend: [Factions, LibsDisguises]
+commands:
+  setlimbo:
+    description: Set limbo spawn
+  setanimalspawn:
+    description: Set animal spawn
+  setmonsterspawn:
+    description: Set monster spawn
+  reset:
+    description: Reset yourself
+  resetclass:
+    description: Reset confirmation
+  limbo:
+    description: Go to limbo
+  selectclass:
+    description: Select a class!
