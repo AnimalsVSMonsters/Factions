@@ -14,17 +14,6 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 import com.animalsvsmonsters.factions.Main;
 
-/**
- * * **************************************************************************************
- * Copyright MikeTheDev (c) 2016.  All Rights Reserved.
- * Any code contained within AVMFactions (this document), and any associated APIs with similar branding
- * are the sole property of Michael Petramalo.  Distribution, reproduction, taking sections, or
- * claiming any contents as your own will break the terms of the license, and void any
- * agreements with the third-party, you.
- * Thanks.
- * Created on 2/2/2016 at 1:13 PM.
- * ******************************************************************************************
- */
 public class MenuAPI
         implements Listener
 {

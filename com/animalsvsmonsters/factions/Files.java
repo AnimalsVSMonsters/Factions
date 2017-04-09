@@ -13,17 +13,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * * **************************************************************************************
- * Copyright MikeTheDev (c) 2015.  All Rights Reserved.
- * Any code contained within KastiaPartyGames (this document), and any associated APIs with similar branding
- * are the sole property of Michael Petramalo.  Distribution, reproduction, taking sections, or
- * claiming any contents as your own will break the terms of the license, and void any
- * agreements with the third-party, you.
- * Thanks.
- * Created on 7/9/2015 at 3:25 PM.
- * ******************************************************************************************
- */
 public class Files {
 
     private File folder;

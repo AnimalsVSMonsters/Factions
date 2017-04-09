@@ -11,17 +11,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * * **************************************************************************************
- * Copyright MikeTheDev (c) 2015.  All Rights Reserved.
- * Any code contained within SoulboundArmor (this document), and any associated APIs with similar branding
- * are the sole property of Michael Petramalo.  Distribution, reproduction, taking sections, or
- * claiming any contents as your own will break the terms of the license, and void any
- * agreements with the third-party, you.
- * Thanks.
- * Created on 9/18/2015 at 2:24 PM.
- * ******************************************************************************************
- */
 public class ItemBuilder{
 
     private ItemStack defaultItem;

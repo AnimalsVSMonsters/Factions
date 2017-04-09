@@ -1,16 +1,5 @@
 package com.animalsvsmonsters.factions;
 
-/**
- * * **************************************************************************************
- * Copyright MikeTheDev (c) 2015.  All Rights Reserved.
- * Any code contained within AreaRegeneration (this document), and any associated APIs with similar branding
- * are the sole property of Michael Petramalo.  Distribution, reproduction, taking sections, or
- * claiming any contents as your own will break the terms of the license, and void any
- * agreements with the third-party, you.
- * Thanks.
- * Created on 9/7/2015 at 4:01 PM.
- * ******************************************************************************************
- */
 public enum SystemColor {
 
     RESET{
