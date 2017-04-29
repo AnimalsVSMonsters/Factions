@@ -2,7 +2,7 @@ package com.animalsvsmonsters.factions.callbacks;
 
 import org.bukkit.entity.Player;
 
-import com.animalsvsmonsters.factions.utils.Database.Callback;
+import com.animalsvsmonsters.factions.utils.database.Callback;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

@@ -9,7 +9,7 @@ import com.animalsvsmonsters.factions.callbacks.PlayerLoginCallback;
 import com.animalsvsmonsters.factions.storage.AVMPlayerManager;
 import com.animalsvsmonsters.factions.team.TeamManager;
 import com.animalsvsmonsters.factions.utils.ScoreboardManagement;
-import com.animalsvsmonsters.factions.utils.Database.Database;
+import com.animalsvsmonsters.factions.utils.database.Database;
 
 public class JoinEvent implements Listener {
 

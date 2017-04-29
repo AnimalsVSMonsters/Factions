@@ -39,9 +39,9 @@ public class ResetCommand implements CommandExecutor{
                                             resetting.remove(p);
                                     }
                                 }.runTaskLater(Main.getInstance(), 15*20);
-                                player.sendMessage("§aYou are attempting to reset you team and kit.");
-                                player.sendMessage("§c§lWARNING: §eThis will also clear your inventory and homes, and remove you from your curremt faction!");
-                                player.sendMessage("§6Please type §2/reset §6again to reset yourself. Upon reset you will be teleported to spawn and prompted to select a kit.");
+                                player.sendMessage("Â§aYou are attempting to reset you team and kit.");
+                                player.sendMessage("Â§cÂ§lWARNING: Â§eThis will also clear your inventory and homes, and remove you from your curremt faction!");
+                                player.sendMessage("Â§6Please type Â§2/reset Â§6again to reset yourself. Upon reset you will be teleported to spawn and prompted to select a kit.");
                             }
                             return true;
                         }

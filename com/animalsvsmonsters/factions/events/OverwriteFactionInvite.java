@@ -23,7 +23,7 @@ public class OverwriteFactionInvite implements Listener {
                     event.setCancelled(true);
                 }
             }else{
-                event.getPlayer().sendMessage("§cCould not find player '§6" + playerName + "§c'");
+                event.getPlayer().sendMessage("Â§cCould not find player 'Â§6" + playerName + "Â§c'");
                 event.setCancelled(true);
             }
         }

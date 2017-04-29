@@ -8,8 +8,8 @@ import com.animalsvsmonsters.factions.storage.AVMPlayer;
 import com.animalsvsmonsters.factions.storage.AVMPlayerManager;
 import com.animalsvsmonsters.factions.team.Team;
 import com.animalsvsmonsters.factions.team.TeamManager;
-import com.animalsvsmonsters.factions.utils.Database.Callback;
-import com.animalsvsmonsters.factions.utils.Database.Database;
+import com.animalsvsmonsters.factions.utils.database.Callback;
+import com.animalsvsmonsters.factions.utils.database.Database;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -63,8 +63,8 @@ public class PlayerLoginCallback implements Callback {
         int result = (Integer) callback.result();
         if(result != -1){
             AVMPlayerManager.getManager().addReset(avmPlayer, result);
-            player.sendMessage("§aYou have a reset available. Use §6/reset §ato reset your team and kit.");
-            player.sendMessage("§c§lWARNING: §aThe reset is irreversible. Your inventory and homes will be cleared and you will be removed from your faction!");
+            player.sendMessage("ï¿½aYou have a reset available. Use ï¿½6/reset ï¿½ato reset your team and kit.");
+            player.sendMessage("ï¿½cï¿½lWARNING: ï¿½aThe reset is irreversible. Your inventory and homes will be cleared and you will be removed from your faction!");
         }
     }
 

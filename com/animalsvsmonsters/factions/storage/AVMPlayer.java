@@ -13,7 +13,7 @@ import com.animalsvsmonsters.factions.kit.KitManager;
 import com.animalsvsmonsters.factions.team.Team;
 import com.animalsvsmonsters.factions.team.TeamManager;
 import com.animalsvsmonsters.factions.utils.ScoreboardManagement;
-import com.animalsvsmonsters.factions.utils.Database.Database;
+import com.animalsvsmonsters.factions.utils.database.Database;
 import com.gmail.filoghost.holographicdisplays.api.Hologram;
 import com.gmail.filoghost.holographicdisplays.api.HologramsAPI;
 import com.massivecraft.factions.FPlayer;

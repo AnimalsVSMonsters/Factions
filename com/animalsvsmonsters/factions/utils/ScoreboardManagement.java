@@ -21,25 +21,25 @@ public class ScoreboardManagement {
             boards.put(player, sb);
 
             Team team = sb.registerNewTeam("Current Disguise");
-            team.setPrefix("§2§l");
+            team.setPrefix("Â§2Â§l");
 
             Team monsters = sb.registerNewTeam("Monsters");
-            monsters.setPrefix("§9§lTeam ");
+            monsters.setPrefix("Â§9Â§lTeam ");
 
             Team animals = sb.registerNewTeam("Animals");
-            animals.setPrefix("§c§lTeam ");
+            animals.setPrefix("Â§cÂ§lTeam ");
 
             Objective o = sb.getObjective(DisplaySlot.SIDEBAR);
             if(o == null){
                 o = sb.registerNewObjective("test", "dummy");
             }
-            o.setDisplayName("§6§lAVM MC");
+            o.setDisplayName("Â§6Â§lAVM MC");
             o.setDisplaySlot(DisplaySlot.SIDEBAR);
 
             Score score1 = o.getScore(player.getKit().getName());
             score1.setScore(1);
 
-            Score score2 = o.getScore("------------");
+            Score score2 = o.getScore("Â§7Â§m------------");
             score2.setScore(2);
 
             Score score3 = o.getScore(team.getPrefix() + team.getDisplayName());
@@ -48,10 +48,10 @@ public class ScoreboardManagement {
             Score score4 = o.getScore("    ");
             score4.setScore(4);
 
-            Score score5 = o.getScore("§2§lKills: §r" + TeamManager.getManager().getTeam("Monsters").getKills() + " ");
+            Score score5 = o.getScore("Â§2Â§lKills: Â§r" + TeamManager.getManager().getTeam("Monsters").getKills() + " ");
             score5.setScore(5);
 
-            Score score6 = o.getScore("------------  ");
+            Score score6 = o.getScore("Â§7Â§m------------  ");
             score6.setScore(6);
 
             Score score7 = o.getScore(monsters.getPrefix() + monsters.getDisplayName());
@@ -60,10 +60,10 @@ public class ScoreboardManagement {
             Score score8 = o.getScore("        ");
             score8.setScore(8);
 
-            Score score9 = o.getScore("§2§lKills: §r" + TeamManager.getManager().getTeam("Animals").getKills());
+            Score score9 = o.getScore("Â§2Â§lKills: Â§r" + TeamManager.getManager().getTeam("Animals").getKills());
             score9.setScore(9);
 
-            Score score10 = o.getScore("------------ ");
+            Score score10 = o.getScore("Â§7Â§m------------ ");
             score10.setScore(10);
 
             Score score11 = o.getScore(animals.getPrefix() + animals.getDisplayName());

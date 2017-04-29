@@ -167,7 +167,7 @@ public class KitEffects implements Listener {
                     for(String string : player.getPlayer().getInventory().getItemInMainHand().getItemMeta().getLore()){
                         if(string.contains("/" + Main.getInstance().getConfiguration().getInt("enderpearl_durability"))){
                             String[] atts = string.split("/");
-                            int durability = Integer.parseInt(atts[0].replace("§7", ""));
+                            int durability = Integer.parseInt(atts[0].replace("Â§7", ""));
                             ItemStack stack = player.getPlayer().getInventory().getItemInMainHand();
                             if(durability > 1){
                                 durability -= 1;
@@ -175,7 +175,7 @@ public class KitEffects implements Listener {
                                 new BukkitRunnable(){
                                     @Override
                                     public void run() {
-                                        player.getPlayer().getInventory().setItemInMainHand(new ItemBuilder(Material.ENDER_PEARL).name("§eEnderman's Enderpearl").lore("§dThis special enderpearl can be used by enderman", "§7" + finalDurability + "/" + Main.getInstance().getConfiguration().getInt("enderpearl_durability")).build());
+                                        player.getPlayer().getInventory().setItemInMainHand(new ItemBuilder(Material.ENDER_PEARL).name("Â§eEnderman's Enderpearl").lore("Â§dThis special enderpearl can be used by enderman", "Â§7" + finalDurability + "/" + Main.getInstance().getConfiguration().getInt("enderpearl_durability")).build());
                                     }
                                 }.runTaskLater(Main.getInstance(), 3);
                             }else{

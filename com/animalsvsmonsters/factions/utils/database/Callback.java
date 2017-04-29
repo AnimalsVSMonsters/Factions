@@ -1,4 +1,4 @@
-package com.animalsvsmonsters.factions.utils.Database;
+package com.animalsvsmonsters.factions.utils.database;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

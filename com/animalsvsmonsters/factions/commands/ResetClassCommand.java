@@ -9,7 +9,7 @@ import org.bukkit.entity.Player;
 import com.animalsvsmonsters.factions.callbacks.ResetQueueCallback;
 import com.animalsvsmonsters.factions.storage.AVMPlayerManager;
 import com.animalsvsmonsters.factions.utils.Lang;
-import com.animalsvsmonsters.factions.utils.Database.Database;
+import com.animalsvsmonsters.factions.utils.database.Database;
 
 import java.util.UUID;
 
@@ -30,8 +30,8 @@ public class ResetClassCommand implements CommandExecutor {
                             ResetQueueCallback callback = new ResetQueueCallback(uuid);
                             Database.get().syncQuery("SELECT resetkey FROM reset_queue WHERE uuid = ?", new Object[]{uuid.toString()}, callback);
                             AVMPlayerManager.getManager().addReset(AVMPlayerManager.getManager().getPlayer(uuid), (Integer) callback.result());
-                            player.sendMessage("§aYou have a reset available. Use §6/reset §ato reset your team and kit.");
-                            player.sendMessage("§c§lWARNING: §eThe reset is irreversible. Your inventory and homes will be cleared and you will be removed from your faction!");
+                            player.sendMessage("Â§aYou have a reset available. Use Â§6/reset Â§ato reset your team and kit.");
+                            player.sendMessage("Â§cÂ§lWARNING: Â§eThe reset is irreversible. Your inventory and homes will be cleared and you will be removed from your faction!");
                         }
                         return true;
                     }

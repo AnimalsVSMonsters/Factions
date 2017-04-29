@@ -4,8 +4,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.animalsvsmonsters.factions.team.Team;
-import com.animalsvsmonsters.factions.utils.Database.Callback;
-import com.animalsvsmonsters.factions.utils.Database.Database;
+import com.animalsvsmonsters.factions.utils.database.Callback;
+import com.animalsvsmonsters.factions.utils.database.Database;
 
 public class TeamInfoCallback implements Callback {
 

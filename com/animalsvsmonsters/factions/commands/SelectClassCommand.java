@@ -11,8 +11,8 @@ import com.animalsvsmonsters.factions.kit.KitManager;
 import com.animalsvsmonsters.factions.storage.AVMPlayerManager;
 import com.animalsvsmonsters.factions.team.TeamManager;
 import com.animalsvsmonsters.factions.utils.Lang;
-import com.animalsvsmonsters.factions.utils.Menu.Menu;
-import com.animalsvsmonsters.factions.utils.Menu.MenuItem;
+import com.animalsvsmonsters.factions.utils.menu.Menu;
+import com.animalsvsmonsters.factions.utils.menu.MenuItem;
 
 import java.util.Arrays;
 
@@ -26,8 +26,8 @@ public class SelectClassCommand implements CommandExecutor {
                 final Player player = (Player) sender;
                 if(args.length == 0){
                     if(AVMPlayerManager.getManager().getPlayer(player).getTeam() != TeamManager.getManager().getTeam("Limbo") && (!(player.hasPermission("avmfactions.admin.changeclass")))) return true;
-                    final Menu pleaseSelectAClass = new Menu("§7Please Select a Kit", 6, null);
-                    MenuItem pig = new MenuItem("§aPig Kit", new MaterialData(Material.MONSTER_EGG, (byte) 90)) {
+                    final Menu pleaseSelectAClass = new Menu("Â§7Please Select a Kit", 6, null);
+                    MenuItem pig = new MenuItem("Â§aPig Kit", new MaterialData(Material.MONSTER_EGG, (byte) 90)) {
                         @Override
                         public void onClick(Player paramPlayer) {
                             AVMPlayerManager.getManager().getPlayer(player).setKit(KitManager.getManager().getKit("Pig"));
@@ -35,9 +35,9 @@ public class SelectClassCommand implements CommandExecutor {
                             pleaseSelectAClass.closeMenu(player);
                         }
                     };
-                    pig.setDescriptions(Arrays.asList("§cAnimals Team"));
+                    pig.setDescriptions(Arrays.asList("Â§cAnimals Team"));
                     pleaseSelectAClass.addMenuItem(pig, 12);
-                    MenuItem rabbit = new MenuItem("§aRabbit Kit", new MaterialData(Material.MONSTER_EGG, (byte) 101)) {
+                    MenuItem rabbit = new MenuItem("Â§aRabbit Kit", new MaterialData(Material.MONSTER_EGG, (byte) 101)) {
                         @Override
                         public void onClick(Player paramPlayer) {
                             AVMPlayerManager.getManager().getPlayer(player).setKit(KitManager.getManager().getKit("Rabbit"));
@@ -45,9 +45,9 @@ public class SelectClassCommand implements CommandExecutor {
                             pleaseSelectAClass.closeMenu(player);
                         }
                     };
-                    rabbit.setDescriptions(Arrays.asList("§cAnimals Team"));
+                    rabbit.setDescriptions(Arrays.asList("Â§cAnimals Team"));
                     pleaseSelectAClass.addMenuItem(rabbit, 13);
-                    MenuItem wolf = new MenuItem("§aWolf Kit", new MaterialData(Material.MONSTER_EGG, (byte) 95)) {
+                    MenuItem wolf = new MenuItem("Â§aWolf Kit", new MaterialData(Material.MONSTER_EGG, (byte) 95)) {
                         @Override
                         public void onClick(Player paramPlayer) {
                             AVMPlayerManager.getManager().getPlayer(player).setKit(KitManager.getManager().getKit("Wolf"));
@@ -55,10 +55,10 @@ public class SelectClassCommand implements CommandExecutor {
                             pleaseSelectAClass.closeMenu(player);
                         }
                     };
-                    wolf.setDescriptions(Arrays.asList("§cAnimals Team"));
+                    wolf.setDescriptions(Arrays.asList("Â§cAnimals Team"));
                     pleaseSelectAClass.addMenuItem(wolf, 14);
 
-                    MenuItem enderman = new MenuItem("§aEnderman Kit", new MaterialData(Material.MONSTER_EGG, (byte) 58)) {
+                    MenuItem enderman = new MenuItem("Â§aEnderman Kit", new MaterialData(Material.MONSTER_EGG, (byte) 58)) {
                         @Override
                         public void onClick(Player paramPlayer) {
                             AVMPlayerManager.getManager().getPlayer(player).setKit(KitManager.getManager().getKit("Enderman"));
@@ -66,9 +66,9 @@ public class SelectClassCommand implements CommandExecutor {
                             pleaseSelectAClass.closeMenu(player);
                         }
                     };
-                    enderman.setDescriptions(Arrays.asList("§9Monsters Team"));
+                    enderman.setDescriptions(Arrays.asList("Â§9Monsters Team"));
                     pleaseSelectAClass.addMenuItem(enderman, 39);
-                    MenuItem skeleton = new MenuItem("§aSkeleton Kit", new MaterialData(Material.MONSTER_EGG, (byte) 51)) {
+                    MenuItem skeleton = new MenuItem("Â§aSkeleton Kit", new MaterialData(Material.MONSTER_EGG, (byte) 51)) {
                         @Override
                         public void onClick(Player paramPlayer) {
                             AVMPlayerManager.getManager().getPlayer(player).setKit(KitManager.getManager().getKit("Skeleton"));
@@ -76,9 +76,9 @@ public class SelectClassCommand implements CommandExecutor {
                             pleaseSelectAClass.closeMenu(player);
                         }
                     };
-                    skeleton.setDescriptions(Arrays.asList("§9Monsters Team"));
+                    skeleton.setDescriptions(Arrays.asList("Â§9Monsters Team"));
                     pleaseSelectAClass.addMenuItem(skeleton, 40);
-                    MenuItem zombie = new MenuItem("§aZombie Kit", new MaterialData(Material.MONSTER_EGG, (byte) 54)) {
+                    MenuItem zombie = new MenuItem("Â§aZombie Kit", new MaterialData(Material.MONSTER_EGG, (byte) 54)) {
                         @Override
                         public void onClick(Player paramPlayer) {
                             AVMPlayerManager.getManager().getPlayer(player).setKit(KitManager.getManager().getKit("Zombie"));
@@ -86,7 +86,7 @@ public class SelectClassCommand implements CommandExecutor {
                             pleaseSelectAClass.closeMenu(player);
                         }
                     };
-                    zombie.setDescriptions(Arrays.asList("§9Monsters Team"));
+                    zombie.setDescriptions(Arrays.asList("Â§9Monsters Team"));
                     pleaseSelectAClass.addMenuItem(zombie, 41);
 
                     MenuItem red = new MenuItem("  ", new MaterialData(Material.STAINED_GLASS_PANE, (byte) 14)) {

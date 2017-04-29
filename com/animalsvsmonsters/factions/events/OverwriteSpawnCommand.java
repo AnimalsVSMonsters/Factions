@@ -28,7 +28,7 @@ public class OverwriteSpawnCommand implements Listener {
 			final Team team = player.getTeam();
 			int delay = Main.getInstance().getConfiguration().getInt("spawn_delay");
 			if (delay != 0) {
-				player.getPlayer().sendMessage("§6You will be teleported to your spawn in " + delay);
+				player.getPlayer().sendMessage("Â§6You will be teleported to your spawn in " + delay);
 				teleporting.add(player);
 				new BukkitRunnable() {
 					@Override
@@ -54,7 +54,7 @@ public class OverwriteSpawnCommand implements Listener {
 			Location from = event.getFrom();
 			if (to.getBlockX() != from.getBlockX() || to.getBlockY() != from.getBlockY() || to.getBlockZ() != from.getBlockZ()) {
 				teleporting.remove(AVMPlayerManager.getManager().getPlayer(event.getPlayer()));
-				event.getPlayer().sendMessage("§cTeleportation was cancelled because you moved!");
+				event.getPlayer().sendMessage("Â§cTeleportation was cancelled because you moved!");
 			}
 		}
 	}

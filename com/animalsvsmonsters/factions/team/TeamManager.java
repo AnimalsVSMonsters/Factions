@@ -3,7 +3,7 @@ package com.animalsvsmonsters.factions.team;
 import org.bukkit.entity.Player;
 
 import com.animalsvsmonsters.factions.callbacks.TeamInfoCallback;
-import com.animalsvsmonsters.factions.utils.Database.Database;
+import com.animalsvsmonsters.factions.utils.database.Database;
 
 import java.util.HashMap;
 

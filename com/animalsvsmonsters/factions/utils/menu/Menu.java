@@ -1,4 +1,4 @@
-package com.animalsvsmonsters.factions.utils.Menu;
+package com.animalsvsmonsters.factions.utils.menu;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;

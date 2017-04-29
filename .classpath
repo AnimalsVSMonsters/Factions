@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/thesills/Test/spigot-1.11.2-R0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/Users/thesills/Test/plugins/HolographicDisplays.jar"/>
+	<classpathentry kind="lib" path="/Users/thesills/Test/plugins/LibsDisguises.jar"/>
+	<classpathentry kind="lib" path="/Users/thesills/Test/plugins/ProtocolLib.jar"/>
+	<classpathentry kind="lib" path="/Users/thesills/Test/plugins/Factions.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>
